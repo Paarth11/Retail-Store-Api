@@ -9,7 +9,7 @@ const router = express.Router()
 router.post('/',inputCost) // input        
 router.get('/display',displayALL) 
 router.get('/total',totalCost) // total sum 
-router.delete('/del',del) // delete
+router.delete('/:cost',del) // delete
 
 
 module.exports = router
